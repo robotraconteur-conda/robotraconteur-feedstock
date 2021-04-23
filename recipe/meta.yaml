@@ -1,0 +1,36 @@
+package:
+  name: robotraconteur
+  version: 0.15.2
+
+source:
+  git_url: https://github.com/robotraconteur/robotraconteur.git
+  git_depth: 10
+  git_rev: v0.15.2
+
+requirements:
+  host:
+    - git
+    - cmake
+    - boost-cpp==1.74.0
+    - python==3.8
+    - swig
+    - numpy
+    - ninja # [win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - pip
+    - dbus # [linux]
+    - zlib # [linux]
+    - openssl # [linux]
+    - libusb # [linux]
+    - libbluetooth-headers # [linux]
+  run:
+    - boost-cpp==1.74.0
+    - python==3.8
+    - numpy
+
+about:
+  home: http://robotraconteur.com
+  license: Apache 2.0
+  summary: 'Communication framework for robotics and automation'
+
