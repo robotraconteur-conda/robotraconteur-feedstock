@@ -1,1 +1,17 @@
-{}
+github:
+  user_or_org: robotraconteur
+
+channels:
+  targets:
+    - robotraconteur
+
+provider:
+  linux: azure
+  osx: azure
+  win: azure
+  linux_aarch64: azure
+  linux_ppc64le: None
+
+azure:
+  upload_packages: False
+  store_build_artifacts: True
