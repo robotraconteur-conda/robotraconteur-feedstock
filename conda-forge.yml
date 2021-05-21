@@ -6,12 +6,12 @@ channels:
     - robotraconteur
 
 provider:
-  linux: azure
-  osx: azure
-  win: azure
-  linux_aarch64: azure
+  linux: github_actions
+  osx: github_actions
+  win: github_actions
+  linux_aarch64: github_actions
   linux_ppc64le: None
 
-azure:
+github_actions:
   upload_packages: False
   store_build_artifacts: True

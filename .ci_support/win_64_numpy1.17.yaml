@@ -1,3 +1,5 @@
+boost_cpp:
+- 1.74.0
 c_compiler:
 - vs2017
 channel_sources:
@@ -8,5 +10,8 @@ cxx_compiler:
 - vs2017
 numpy:
 - '1.17'
+pin_run_as_build:
+  boost-cpp:
+    max_pin: x.x.x
 target_platform:
 - win-64
