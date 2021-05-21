@@ -11,8 +11,7 @@ cdt_arch:
 cdt_name:
 - cos7
 channel_sources:
-- conda-forge
-- robotraconteur
+- conda-forge,robotraconteur
 channel_targets:
 - robotraconteur
 cxx_compiler:
