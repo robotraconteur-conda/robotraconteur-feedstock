@@ -7,9 +7,9 @@ c_compiler_version:
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge,robotraconteur
+- robotraconteur,conda-forge,defaults
 channel_targets:
-- robotraconteur
+- robotraconteur main
 cxx_compiler:
 - gxx
 cxx_compiler_version:

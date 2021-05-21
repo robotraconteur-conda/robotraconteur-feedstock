@@ -3,9 +3,9 @@ boost_cpp:
 c_compiler:
 - vs2017
 channel_sources:
-- conda-forge,robotraconteur
+- robotraconteur,conda-forge,defaults
 channel_targets:
-- robotraconteur
+- robotraconteur main
 cxx_compiler:
 - vs2017
 numpy:
