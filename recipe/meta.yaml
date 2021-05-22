@@ -7,7 +7,7 @@ source:
   git_depth: 10
   git_rev: v0.15.2
   patches:
-    - fix_osx_python.patch # [win]
+    - fix_osx_python.patch # [osx]
 
 requirements:
   host:
