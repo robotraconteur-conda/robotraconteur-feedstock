@@ -3,7 +3,7 @@ github:
 
 channels:
   targets:
-    - robotraconteur
+    - ["robotraconteur", "main"]
 
 provider:
   linux: github_actions
@@ -13,5 +13,5 @@ provider:
   linux_ppc64le: None
 
 github_actions:
-  upload_packages: False
+  upload_packages: True
   store_build_artifacts: True

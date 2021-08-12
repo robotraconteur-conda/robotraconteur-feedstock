@@ -33,6 +33,9 @@ requirements:
     - python
     - numpy
 
+build:
+  number: 1
+
 about:
   home: http://robotraconteur.com
   license: Apache 2.0
