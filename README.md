@@ -33,16 +33,41 @@ conda config --add channels robotraconteur
 conda config --set channel_priority strict
 ```
 
-Once the `robotraconteur` channel has been enabled, `robotraconteur` can be installed with:
+Once the `robotraconteur` channel has been enabled, `robotraconteur` can be installed with `conda`:
 
 ```
 conda install robotraconteur
 ```
 
-It is possible to list all of the versions of `robotraconteur` available on your platform with:
+or with `mamba`:
+
+```
+mamba install robotraconteur
+```
+
+It is possible to list all of the versions of `robotraconteur` available on your platform with `conda`:
 
 ```
 conda search robotraconteur --channel robotraconteur
+```
+
+or with `mamba`:
+
+```
+mamba search robotraconteur --channel robotraconteur
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search robotraconteur --channel robotraconteur
+
+# List packages depending on `robotraconteur`:
+mamba repoquery whoneeds robotraconteur --channel robotraconteur
+
+# List dependencies of `robotraconteur`:
+mamba repoquery depends robotraconteur --channel robotraconteur
 ```
 
 
