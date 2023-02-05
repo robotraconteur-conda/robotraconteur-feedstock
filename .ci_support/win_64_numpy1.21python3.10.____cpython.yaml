@@ -1,15 +1,15 @@
 boost_cpp:
-- 1.74.0
+- 1.78.0
 c_compiler:
-- vs2017
+- vs2019
 channel_sources:
 - robotraconteur,conda-forge,defaults
 channel_targets:
 - robotraconteur main
 cxx_compiler:
-- vs2017
+- vs2019
 numpy:
-- '1.19'
+- '1.21'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -17,7 +17,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.10.* *_cpython
 target_platform:
 - win-64
 zip_keys:
