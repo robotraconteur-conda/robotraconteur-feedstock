@@ -30,7 +30,7 @@ requirements:
     - numpy
 
 build:
-  number: 2
+  number: 3
 
 about:
   home: http://robotraconteur.com
