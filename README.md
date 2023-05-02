@@ -1,11 +1,11 @@
-About robotraconteur
-====================
+About robotraconteur-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/robotraconteur/robotraconteur-feedstock/blob/main/LICENSE.txt)
 
 Home: http://robotraconteur.com
 
 Package license: Apache 2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/robotraconteur/robotraconteur-feedstock/blob/master/LICENSE.txt)
 
 Summary: Communication framework for robotics and automation
 
