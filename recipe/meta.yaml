@@ -1,10 +1,10 @@
 package:
   name: robotraconteur
-  version: 0.16.0
+  version: 0.17.0
 
 source:
   git_url: https://github.com/robotraconteur/robotraconteur.git
-  git_rev: v0.16.0
+  git_rev: v0.17.0
 
 requirements:
   host:
@@ -30,7 +30,7 @@ requirements:
     - numpy
 
 build:
-  number: 3
+  number: 0
 
 about:
   home: http://robotraconteur.com
