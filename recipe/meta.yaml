@@ -1,10 +1,16 @@
+{% set name = "robotraconteur" %}
+{% set version = "0.17.0" %}
+
 package:
-  name: robotraconteur
-  version: 0.17.0
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   git_url: https://github.com/robotraconteur/robotraconteur.git
-  git_rev: v0.17.0
+  git_rev: v{{ version }}
+
+build:
+  number: 1
 
 requirements:
   host:
@@ -14,26 +20,33 @@ requirements:
     - python
     - swig
     - numpy
-    - ninja # [win]
+    - ninja  # [win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - make # [linux]
+    - make  # [linux]
     - pip
-    - dbus # [linux]
-    - zlib # [linux]
-    - openssl # [linux]
-    - libusb # [linux]
-    - libbluetooth-headers # [linux]
+    - dbus  # [linux]
+    - zlib  # [linux]
+    - openssl  # [linux]
+    - libusb  # [linux]
+    - libbluetooth-headers  # [linux]
   run:
     - boost-cpp
     - python
     - numpy
 
-build:
-  number: 0
+test:
+  commands:
+    - test -f ${PREFIX}/include/RobotRaconteur.h  # [not win]
+    - if exist %PREFIX%\\Library\\include\\RobotRaconteur.h (exit 0) else (exit 1)  # [win]
 
 about:
   home: http://robotraconteur.com
-  license: Apache 2.0
+  dev_url: https://github.com/robotraconteur/robotraconteur
+  license: Apache-2.0
+  license_file: LICENSE.txt
   summary: 'Communication framework for robotics and automation'
 
+extra:
+  recipe-maintainers:
+    - johnwason
