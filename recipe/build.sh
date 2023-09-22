@@ -2,6 +2,12 @@
 
 set -e
 
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    mkdir -p bluez/include/bluetooth
+    cp -r bluez-src/lib/*.h bluez/include/bluetooth/
+    CXXFLAGS="$CXXFLAGS -I$SRC_DIR/bluez/include"
+fi
+
 mkdir -p build2
 cd build2
 
