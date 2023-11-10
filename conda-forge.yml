@@ -1,10 +1,6 @@
 github:
   user_or_org: robotraconteur
 
-channels:
-  targets:
-    - ["robotraconteur", "main"]
-
 provider:
   linux: github_actions
   osx: github_actions
