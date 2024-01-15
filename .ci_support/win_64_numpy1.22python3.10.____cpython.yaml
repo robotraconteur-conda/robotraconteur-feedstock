@@ -6,6 +6,8 @@ channel_targets:
 - robotraconteur main
 cxx_compiler:
 - vs2019
+libboost_devel:
+- '1.82'
 numpy:
 - '1.22'
 pin_run_as_build:
