@@ -27,7 +27,7 @@ requirements:
     - cmake
     - swig
   host:    
-    - boost-cpp
+    - libboost-devel
     - python
     - pip
     - numpy
@@ -36,10 +36,8 @@ requirements:
     - openssl  # [linux]
     - libusb  # [linux]
   run:
-    - boost-cpp
     - python
     - numpy
-    - openssl  # [unix]
 
 test:
   commands:
